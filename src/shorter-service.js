@@ -1,16 +1,4 @@
-
-/* var _replaceText = [
-  ["\s\s+/g", ' '],
-  ["\.\.\./gi",'…']
-];
-
-_replaceText = _replaceText.map(function(d) {
-  return [new RegExp(d[0]),d[1]];
-});
-
-console.log(_replaceText); */
-
-var replaceText = [
+const replaceText = [
   [/\s\s+/g, ' '],
 
   [/\.\.\./gi,'…'],
