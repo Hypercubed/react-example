@@ -7,7 +7,8 @@
     "start:dist": "npm run jspm:bundle && live-server",
     "eslint": "./node_modules/.bin/eslint src/*.js",
     "jspm:bundle": "jspm bundle src/boot --inject --minify",
-    "deploy": "npm run jspm:bundle && gulp ghPages && jspm unbundle"
+    "jspm:unbundle": "jspm unbundle && rm build.js build.js.map",
+    "deploy": "npm run jspm:bundle && gulp ghPages && npm run jspm:unbundle"
   },
   "dependencies": {},
   "jspm": {

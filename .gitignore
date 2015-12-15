@@ -2,3 +2,5 @@
 node_modules
 jspm_packages
 .publish
+build.js
+build.js.map
